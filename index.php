@@ -19,10 +19,10 @@
 // API key placeholders that must be filled in by users.
 // You can find it on
 // https://www.yelp.com/developers/v3/manage_app
-$API_KEY = "PKodD9PMKeu7-zukSEFfjk2fS0bPnK96AMRVrMoU8R6DqrVNRtJNXOxcdLbKK9fOQaz11q22tEk_Eb40U3GPFcMbu5N3b7CbUVL5XhUvFoyfEWmJWoDohGv3igmmWnYx";
+// $API_KEY = "PKodD9PMKeu7-zukSEFfjk2fS0bPnK96AMRVrMoU8R6DqrVNRtJNXOxcdLbKK9fOQaz11q22tEk_Eb40U3GPFcMbu5N3b7CbUVL5XhUvFoyfEWmJWoDohGv3igmmWnYx";
 
 // Complain if credentials haven't been filled out.
-assert($API_KEY, "Please supply your API key.");
+// assert($API_KEY, "Please supply your API key.");
 // OAuth credential placeholders that must be filled in by users.
 // You can find them on
 // https://www.yelp.com/developers/v3/manage_app
@@ -127,7 +127,7 @@ function request($host, $path, $url_params = array()) {
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => "GET",
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Bearer " . $API_KEY,
+                "Authorization: Bearer " . "PKodD9PMKeu7-zukSEFfjk2fS0bPnK96AMRVrMoU8R6DqrVNRtJNXOxcdLbKK9fOQaz11q22tEk_Eb40U3GPFcMbu5N3b7CbUVL5XhUvFoyfEWmJWoDohGv3igmmWnYx",
                 "cache-control: no-cache",
             ),
         ));
