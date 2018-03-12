@@ -36,8 +36,8 @@ assert($API_KEY, "Please supply your API key.");
 $API_HOST = "https://api.yelp.com";
 $SEARCH_PATH = "/v3/businesses/search";
 $BUSINESS_PATH = "/v3/businesses/";  // Business ID will come after slash.
-$TOKEN_PATH = "/oauth2/token";
-$GRANT_TYPE = "client_credentials";
+// $TOKEN_PATH = "/oauth2/token";
+// $GRANT_TYPE = "client_credentials";
 
 // Defaults for our simple example.
 $DEFAULT_TERM = "dinner";
@@ -49,7 +49,6 @@ $DEFAULT_RADIUS = 8064;
 /**
  * Given a bearer token, send a GET request to the API.
  * 
- * @return   OAuth bearer token, obtained using client_id and client_secret.
  */
 
 // function obtain_bearer_token() {
